@@ -12,14 +12,14 @@
       <h1>Student Registeration Form</h1>
     </center>
     <hr />
-    <form >
+    <form action="/handle-form" method="POST">
         <h5>Firstname: </h5>
-        <input  type="text"  style="width: 100%" height="auto" placeholder="firstname" /> 
+        <input  name="firstname" type="text"  style="width: 100%" height="auto" placeholder="firstname" /> 
         <h5>Middlename: </h5>
-        <input  type="text"  style="width: 100%" height="auto" placeholder="Middlename" />
+        <input name="middlename"  type="text"  style="width: 100%" height="auto" placeholder="Middlename" />
         <h5>Lastname: </h5>
-        <input  type="text"  style="width: 100%" height="auto" placeholder="Lastname" />
-    </form>
+        <input name="lastname" type="text"  style="width: 100%" height="auto" placeholder="Lastname" />
+
     <div style="margin-top: 30px;">
         <p style="display: inline;" >Course :</p> 
         <select style="margin-left: 10px;">
@@ -64,7 +64,6 @@
     </div>
     <center>
         <h5>
-            <form action="/register" method="post">
                 <button type="submit" style="background-color: #4CAF50; 
                               color: white; 
                               border: none; 
@@ -76,12 +75,11 @@
                               width: 100%;">
                   Register
                 </button>
-              </form>
               
 
         </h5>
     </center>
-
+</form>
 
   </body>
 </html>
