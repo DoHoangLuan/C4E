@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    background: grey;
+    width:90vw;
+    height: 100vh;
+    margin: auto;
+
+}
+
+.container-left {
+    display: flex;
+    flex: 1;
+    width: 30vw;
+    margin: 80px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box-m1 {
+    width: 200px;
+    height: 120px;
+    background-color: green;
+    justify-content: center;
+    display: flex;
+}
+.box-m6{
+    width: 200px;
+    height: 120px;
+    background-color: blue;
+    justify-content: center;
+    display: flex;
+}
+.writer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container-center {
+    display: flex;
+    flex: 1;
+    width: 30vw;
+    margin: 80px;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.box-m2 {
+    width: 200px;
+    height: 120px;
+    background-color: rgb(7, 141, 67);
+    justify-content: center;
+    display: flex;
+}
+.box-m5 {
+    width: 200px;
+    height: 120px;
+    background-color: pink;
+    justify-content: center;
+    display: flex;
+}
+.box-muctieu2022 {
+    width: 200px;
+    height: 80px;
+    background-color: antiquewhite;
+    justify-content: center;
+    display: flex;
+}
+.container-right {
+    display: flex;
+    flex: 1;
+    width: 30vw;
+    margin: 80px;
+    flex-direction: column;
+    justify-content: space-around   ;
+}
+.box-m3 {
+    width: 200px;
+    height: 120px;
+    background-color: skyblue;
+    justify-content: center;
+    display: flex
+}
+.box-m4 {
+    width: 200px;
+    height: 120px;
+    background-color: red;
+    justify-content: center;
+    display: flex;
+}
