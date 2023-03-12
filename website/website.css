@@ -1,0 +1,164 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar-1 {
+    width: 100vw;
+    height: 30px;
+    flex-direction: row;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+.navbar-header{
+    width: 100vw;
+    height: 8%;
+    flex-direction: row;
+    background-color: white;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    white-space: nowrap;
+}
+.writer {
+    color: azure;
+    font-size: 10px;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box-ava{
+    padding: 5px 5px;
+    width: 20px;
+    height: 20px;
+}
+    
+.box-ava-header{
+    margin:0px 0px 0px 30px;
+    height: 63px;
+    display: flex;
+   
+}
+.box-header {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    flex-direction: row;
+    /* align-items: center; */
+    gap: 20px;
+    margin-left: 150px;
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    gap: 20px;
+}
+li {
+    float: left;
+    
+    
+}
+li a, .dropbtn{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.box-icon-container{
+    display: flex;
+    width: 20%;
+   justify-content: flex-end;
+    flex-direction: row;
+    /* align-items: center; */
+    
+}
+.box-icon {
+    height: 25px;
+    display: flex;
+    
+}
+button {
+    border: none;
+    background: none;
+}
+.box-navbar-2 {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    align-items: center;
+    justify-content:center ;
+}
+.box-navbar-2 ul:hover .child-dropdown{
+    visibility: visible;
+    text-align: center;
+    pointer-events:visible;
+}
+
+.box-header  a:hover{
+    border-bottom: 1px solid black;
+}
+
+.child-dropdown {
+    visibility: hidden;
+    
+}
+.parent-dropdown:hover .child-dropdown{
+    visibility: visible;
+    text-align: center;
+    pointer-events:visible;
+   
+    /* bottom: -36px; */
+    
+}
+.child-dropdown{
+    position: absolute;
+    /* bottom: -36px; */
+    background-color:greenyellow;
+    left: 0px;
+    right: 0px;
+    height: 60px;
+    
+   ;
+
+}
+
+.child-dropdown:hover {
+    visibility: visible     ;
+}
+
+.child-dropdown-2 {
+    visibility: hidden;
+    
+}
+.parent-dropdown:hover .child-dropdown{
+    visibility: visible;
+    text-align: center;
+    pointer-events:visible;
+   
+    /* bottom: -36px; */
+    
+}
+.child-dropdown{
+    position: absolute;
+    /* bottom: -36px; */
+    background-color:greenyellow;
+    left: 0px;
+    right: 0px;
+    height: 60px;
+    
+   ;
+
+}
+
+.child-dropdown:hover {
+    visibility: visible     ;
+}
+
