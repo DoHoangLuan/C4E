@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="website.css" />
     <script src="https://kit.fontawesome.com/abd6099073.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
 </head>
 
 <body>
@@ -16,17 +17,21 @@
             <img src="khaitruong.png" class="box-ava" />
             <p class="writer">L&L chào đón khai trương</p>
             <i>
-                <a href="" class="writer">Mua ngay</a>
+                <a href="website2.html" class="writer">Mua ngay</a>
             </i>
         </div>
-        <div class="navbar-header">
-            <img src="logobrand.jpg" class="box-ava-header" />
-            <div class="box-header">
+        <div class="navbar-header ">
+            <div id="toggle_mobile" class="toggle_mobile">
+            </div>
+
+            <div class="box-ava-header ">
+                <img src="logobrand.jpg">
+            </div>
+            <div id="box-header" class="box-header">
                 <ul style="position: relative; overflow: visible; font-size: 20px ; ">
                     <li class="parent-dropdown">
-                        <a href="#Lovely">LoveLy</a> 
-                        <div class="child-dropdown" >Quần Unisex</div>
-                        <!-- <div class="child-dropdown" >Áo Unisex</div> -->
+                        <a href="#Lovely">LoveLy</a>
+                        <div class="child-dropdown">Quần Unisex</div>
                     </li>
                     <li><a href="#79Flex">79Flex</a></li>
                     <li><a href="#CM79">CM79</a></li>
@@ -36,40 +41,53 @@
 
             </div>
             <div class="box-icon-container">
-                <ul>
-                    <li>
-                        <a href="#find">
-                            <button>
-                                <img src="kinhlup.png" class="box-icon" />
-                            </button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#my-id">
-                            <button>
-                                <img src="user.png" class="box-icon" />
-                            </button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#my-market">
-                            <button>
-                                <img src="shopping-cart.png" class="box-icon" />
-                            </button>
-                        </a>
-                    </li>
-                </ul>
+                <div class="box-icon mobile-hidden ">
+                    <a href="#find">
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass icon-action "></i>
+                        </button>
+                    </a>
+                </div>
+                <div class="box-icon">
+                    <a href="#my-id">
+                        <button>
+                            <i class="fa-solid fa-user icon-action"></i>
+                        </button>
+                    </a>
+                </div>
+                <div class="box-icon">
+                    <a href="#my-market">
+                        <button>
+                            <i class=" fa-solid fa-shop icon-action "></i>
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
+        <div>
+            <div id="menu_mobile" class="menu_mobile">
+                <div class="header_search">
+                    <label class="header_search_field" for="password" >
+                        <input class="header_search_control" id="password" name="password" type="text" placeholder="Tìm kiểm sản phẩm ..." />
+                    </label>
+                </div>
+                <div class="nav-tab-mobile" > 
+                    <a href="#sannpham" class="nav-tab-title">Thời trang</a>
+                    <a href="#79Flex" class="nav-tab-title">79Flex</a>
+                    <a href="#CM79" class="nav-tab-title">CM79
 
-        <hr />
-        <div class="box-navbar-2">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div id="box-navbar-2" class="box-navbar-2 ">
             <ul style="position: relative;overflow: visible;">
                 <li class="parent-dropdown">
-                    <a  style="color: rgb(117, 140, 244);" href="#New">
+                    <a style="color: rgb(117, 140, 244);" href="#New">
                         Sản phẩm mới
                     </a>
-                    <div class="child-dropdown" >
+                    <div class="child-dropdown">
                         <a href="website2.html">Đồ mới</a>
                     </div>
                 </li>
@@ -82,9 +100,18 @@
                 <li><a style="color: rgb(239, 153, 153);" href="#Discount">Giảm giá</a></li>
             </ul>
         </div>
-
     </div>
-    
+    <script>
+        var toggle_mobile = document.getElementById("toggle_mobile")
+        toggle_mobile.onclick = function () {
+            toggle_mobile.classList.toggle("open")
+        }
+        $(document).ready(function () {
+            $(toggle_mobile).click(function () {
+                $("menu_mobile").slideToggle();
+            })
+        })
+    </script>
 </body>
 
 </html>

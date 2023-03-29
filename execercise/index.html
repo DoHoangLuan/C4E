@@ -7,59 +7,74 @@
     <title>Bài tập về nhà</title>
     
   </head>
-  <body style="background-color: #add7e7">
-    <center>
-      <h1>Student Registeration Form</h1>
-    </center>
-    <hr />
-    <form action="/handle-form" method="POST">
-        <h5>Firstname: </h5>
-        <input  name="firstname" type="text"  style="width: 100%" height="auto" placeholder="firstname" /> 
-        <h5>Middlename: </h5>
-        <input name="middlename"  type="text"  style="width: 100%" height="auto" placeholder="Middlename" />
-        <h5>Lastname: </h5>
-        <input name="lastname" type="text"  style="width: 100%" height="auto" placeholder="Lastname" />
+  <style>
+    .cointainer{
+        width: 500px;
+        height: auto;
+        border: 10px white ;
+        margin: auto;
+        text-decoration: none;
+        background-color: #add7e7;
+        padding: none;
+        border-width: none;
+    }
+   
+  </style>
 
-    <div style="margin-top: 30px;">
-        <p style="display: inline;" >Course :</p> 
-        <select style="margin-left: 10px;">
-            <option> Course </option>
-            <option> Param </option>
-        </select>
-    </div>
-    
-    <div> 
-        <p> Gender : </p>
-        <input type="radio" name="Sex"> <i> Male </i>
-        <input type="radio" name="Sex"> <i> Female </i>
-        <input type="radio" name="Sex"> <i> Other </i>
-    </div>
-    <h5>Phone : </h5>
-    <input  type="text"  style="width: 100%" height="auto" placeholder=" +91 " />
-    <div style="margin-top: 30px;">
-        <input  type="text"  style="width: 100%" height="auto" placeholder=" Phone no " />
-    </div>
-    <p>
-        <h5>Current Address :</h5>
-        <textarea cols="100" rows="10" placeholder="Current Address" 
-                style="width: 100%; height: auto;" 
-        ></textarea>
-    </p>
-    <div>
+<body >
+    <div class="cointainer" >
+    <center>
+            <h1>Student Registeration Form</h1>
+        </center>
+        <hr />
+        <form action="/handle-form" method="POST"> 
+        <h5>Firstname: </h5>
+        <input  name="firstname" type="text"  style="width: 98%;" height="auto" placeholder="firstname" /> 
+        <h5>Middlename: </h5>
+        <input name="middlename"  type="text"  style="width: 98%;" height="auto" placeholder="Middlename" />
+        <h5>Lastname: </h5>
+        <input name="lastname" type="text"  style="width: 98%;" height="auto" placeholder="Lastname" />
+        
+        <div style="margin-top: 30px;">
+            <p style="display: inline;" >Course :</p> 
+            <select style="margin-left: 10px;">
+                <option> Course </option>
+                <option> Param </option>
+            </select>
+        </div>
+        
+        <div> 
+            <p> Gender : </p>
+            <input type="radio" name="Sex"> <i> Male </i>
+            <input type="radio" name="Sex"> <i> Female </i>
+            <input type="radio" name="Sex"> <i> Other </i>
+        </div>
+        <h5>Phone : </h5>
+        <input  type="tel"  style="width: 98%;" height="auto" value="+91" /> 
+        <div style="margin-top: 30px;">
+            <input  type="tel"  style="width: 98%;" height="auto" placeholder=" Phone no " />
+        </div>
+        <p>
+            <h5>Current Address :</h5>
+            <textarea cols="100" rows="10" placeholder="Current Address" 
+            style="width: 98%;"; height: auto; 
+            ></textarea>
+        </p>
+        <div>
         <b style="display: block;">Email</b>
-        <input type="email" style="width: 100%; margin-top: 10px ;" height="auto" 
+        <input type="email" style="width: 98%;"; margin-top: 10px ; height="auto" 
         placeholder=" Enter Email " />
     </div> 
     
     <div>
         <b style="display: block; margin-top: 10px;">Password</b>
-        <input type="password" style="width: 100%; margin-top: 10px ;" height="auto" 
+        <input type="password" style="width: 98%;"; margin-top: 10px ; height="auto" 
         placeholder=" Enter Password " />
     </div>
-
+    
     <div>
         <b style="display: block; margin-top: 10px;">Re-type Password</b>
-        <input type="password" style="width: 100%; margin-top: 10px ;" height="auto" 
+        <input type="password" style="width: 98%; margin-top: 10px ;" height="auto" 
         placeholder=" Retype Password " />
     </div>
     <center>
@@ -75,11 +90,12 @@
                               width: 100%;">
                   Register
                 </button>
-              
+                
 
-        </h5>
+            </h5>
     </center>
 </form>
 
-  </body>
+</div>  
+</body>
 </html>
